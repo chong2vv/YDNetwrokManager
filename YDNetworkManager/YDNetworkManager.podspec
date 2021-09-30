@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/chong2vv/YDNetwrokManager.git", :tag => "#{spec.version}" }
 
   spec.ios.deployment_target = '9.0'
-  spec.source_files = "YDNetworkManager/*"
+  spec.source_files = "YDNetworkManager/**/*"
 
   spec.subspec 'YDCommand' do |cmd_ss|
       cmd_ss.source_files = "YDNetworkManager/YDCommand/**/*"

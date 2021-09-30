@@ -6,6 +6,7 @@
 //
 
 #import "YDBatchCommand.h"
+#import "YDCommand.h"
 
 @implementation YDBatchCommand
 
