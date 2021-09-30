@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/chong2vv/YDNetwrokManager"
 
-  spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license          = { :type => 'MIT', :file => 'YDNetworkManager/LICENSE' }
 
   spec.author             = { "王远东" => "chong2vv@gmail.com" }
 
@@ -22,11 +22,6 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = '9.0'
   spec.source_files = "YDNetworkManager/**/*"
-  
-
-  spec.subspec 'YDCommand' do |cmd_ss|
-      cmd_ss.source_files = "YDNetworkManager/YDCommand/**/*"
-  end
 
   spec.requires_arc = true
   spec.frameworks = "Foundation", "UIKit"
