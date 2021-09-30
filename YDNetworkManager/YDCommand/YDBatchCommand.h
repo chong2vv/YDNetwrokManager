@@ -7,7 +7,7 @@
 
 #import <YTKNetwork/YTKNetwork.h>
 #import "YDCommand.h"
-
+#import <UIKit/UIKit.h>
 
 @class YDBatchCommand;
 typedef void(^YDBatchRequestCompletionBlock)(__kindof YDBatchCommand *request);
@@ -48,7 +48,7 @@ typedef void(^YDBatchRequestCompletionBlock)(__kindof YDBatchCommand *request);
  *  @param aRefresh      调用显示刷新动画
  *  @param aCompletion   完成后都会走该block，以属性 NSError *error 来区分成功失败  isDataFromCache 来区分是否从缓存走的
  */
-+ (instancetype)ydBatchLocalRequestArray:(NSArray<YDCommand *>*)aCommands enable:(BOOL)aEnable saveCache:(BOOL)aCache refresh:(void (^)())aRefresh completion:(YDBatchRequestCompletionBlock)aCompletion;
++ (instancetype)ydBatchLocalRequestArray:(NSArray<YDCommand *>*)aCommands enable:(BOOL)aEnable saveCache:(BOOL)aCache refresh:(void (^)(void))aRefresh completion:(YDBatchRequestCompletionBlock)aCompletion;
 
 @end
 

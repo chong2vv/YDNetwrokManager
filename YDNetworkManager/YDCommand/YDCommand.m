@@ -9,6 +9,7 @@
 #import "YDCommandConfig.h"
 #import "YDCommand+YDError.h"
 #import <objc/runtime.h>
+#import <UIKit/UIKit.h>
 
 @interface YDCommand ()
 

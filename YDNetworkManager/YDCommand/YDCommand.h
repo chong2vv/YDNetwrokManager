@@ -7,8 +7,6 @@
 
 #import <YTKNetwork/YTKNetwork.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 /* 1.书写网络请求参数属性以 input_ 开头内部会自行拼接requestArgument 无需自己拼写参数
  * 2.返回200 OK 但带有服务端错误的处理 失败成功请覆盖 - (void)requestSuccess:(NSDictionary *)aDic; - (void)requestFailureEnd; 均在主线程处理。不要使用delegate方法 暂未处理
  * 3.YTK 的缓存处理不适用于部分应用场景，ignoreCache是一级判断 再通过 - (NSInteger)cacheTimeInSeconds方法来判断从网络走还是缓存走，无法实现先走缓存再走网络的实现。加入localCachefailureTime属性通过动态改变 localCachefailureTime 来实现，而cacheTimeInSeconds方法返回该值。拿缓存时设置无限大，走网络则看情况。
@@ -93,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param aDismiss      无缓存数据结束加载网络数据时调用
  *  @param aCompletion   完成后都会走该block，以属性 NSError *error 来区分成功失败  isDataFromCache 来区分是否从缓存走的
  */
-+ (instancetype)ydCommandlocalSetParame:(YTKRequestCompletionBlock)aParame showLoading:(void (^)(void))ashowLoading dismiss:(void (^)())aDismiss completion:(YTKRequestCompletionBlock)aCompletion;
++ (instancetype)ydCommandlocalSetParame:(YTKRequestCompletionBlock)aParame showLoading:(void (^)(void))ashowLoading dismiss:(void (^)(void))aDismiss completion:(YTKRequestCompletionBlock)aCompletion;
 
 + (instancetype)ydCommandlocalSetParame:(YTKRequestCompletionBlock)aParame completion:(YTKRequestCompletionBlock)aCompletion;
 
@@ -104,10 +102,9 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param aDismiss      无缓存数据结束加载网络数据时调用
  *  @param aCompletion   完成后只走一次 以属性 NSError *error 来区分成功失败  isDataFromCache 来区分是否从缓存走的
  */
-+ (instancetype)ydCommandlocalCompletionSetParame:(YTKRequestCompletionBlock)aParame showLoading:(void (^)(void))ashowLoading dismiss:(void (^)())aDismiss completion:(YTKRequestCompletionBlock)aCompletion;
++ (instancetype)ydCommandlocalCompletionSetParame:(YTKRequestCompletionBlock)aParame showLoading:(void (^)(void))ashowLoading dismiss:(void (^)(void))aDismiss completion:(YTKRequestCompletionBlock)aCompletion;
 
 + (instancetype)ydCommandlocalCompletionSetParame:(YTKRequestCompletionBlock)aParame completion:(YTKRequestCompletionBlock)aCompletion;
 
 @end
 
-NS_ASSUME_NONNULL_END

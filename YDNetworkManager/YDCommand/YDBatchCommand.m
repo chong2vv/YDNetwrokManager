@@ -51,7 +51,7 @@
  */
 + (instancetype)ydBatchRequestArray:(NSArray<YDCommand *>*)aCommands withNext:(YDBatchRequestCompletionBlock)aNext success:(YDBatchRequestCompletionBlock)aSuccess failure:(YDBatchRequestCompletionBlock)aFailure {
 
-    YDBatchRequest *batchRequest = [[YDBatchRequest alloc] initWithRequestArray:aCommands];
+    YDBatchCommand *batchRequest = [[YDBatchCommand alloc] initWithRequestArray:aCommands];
     [batchRequest traverseRequest:^(YDCommand *aCmd) {
         [aCmd defaultParame];
     }];
@@ -95,7 +95,7 @@
  *  @param aRefresh      调用显示刷新动画
  *  @param aCompletion   完成后都会走该block，以属性 NSError *error 来区分成功失败  isDataFromCache 来区分是否从缓存走的
  */
-+ (instancetype)ydBatchLocalRequestArray:(NSArray<YDCommand *>*)aCommands enable:(BOOL)aEnable saveCache:(BOOL)aCache refresh:(void (^)())aRefresh completion:(YDBatchRequestCompletionBlock)aCompletion {
++ (instancetype)ydBatchLocalRequestArray:(NSArray<YDCommand *>*)aCommands enable:(BOOL)aEnable saveCache:(BOOL)aCache refresh:(void (^)(void))aRefresh completion:(YDBatchRequestCompletionBlock)aCompletion {
     
     if (!aEnable) {
         [aCommands enumerateObjectsUsingBlock:^(YDCommand * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -104,7 +104,7 @@
         return [self ydBatchRequestArray:aCommands completion:aCompletion];
     }
     
-    YDBatchRequest *batchRequest = [[YDBatchRequest alloc] initWithRequestArray:aCommands];
+    YDBatchCommand *batchRequest = [[YDBatchCommand alloc] initWithRequestArray:aCommands];
     __block BOOL isOK = YES;
     [batchRequest traverseRequest:^(YDCommand *aCmd) {
         [aCmd defaultParame];

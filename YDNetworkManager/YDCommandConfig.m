@@ -122,8 +122,6 @@
         [requestHeaders setObject:@"3" forKey:@"platform"];
     }
     
-    //渠道
-    [requestHeaders setObject:kYDChannelId forKey:@"channel"];
     
     [requestHeaders setObject:[NSString stringWithFormat:@"%tu", (long)(timestamp*1000.)] forKey:@"timestamp"];
     
@@ -152,9 +150,6 @@
     NSDictionary * blockDic = [YDCommandConfig configUserAgent];
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
     if (blockDic) [dic setDictionary:blockDic];
-    
-    [dic setObject:UI_IS_IPAD ? @"ydy-ipad" : @"ydy-iphone" forKey:@"ua"];
-    [dic setObject:kYDChannelId forKey:@"channel"];
 
     NSMutableArray *arr = [NSMutableArray array];
     [dic enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSString *  _Nonnull obj, BOOL * _Nonnull stop) {
@@ -171,8 +166,7 @@
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
     if (blockDic) [dic setDictionary:blockDic];
 
-    [dic setObject:UI_IS_IPAD ? @"ydy-ipad" : @"ydy-iphone" forKey:@"ua"];
-    [dic setObject:kYDChannelId forKey:@"channel"];
+    
     return dic;
 }
 

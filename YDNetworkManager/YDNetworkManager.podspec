@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YDNetworkManager"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "YD 的网络请求库，基于YTK、AF"
 
   spec.homepage     = "https://github.com/chong2vv/YDNetwrokManager"
@@ -22,6 +22,7 @@ Pod::Spec.new do |spec|
 
   spec.ios.deployment_target = '9.0'
   spec.source_files = "YDNetworkManager/**/*"
+  
 
   spec.subspec 'YDCommand' do |cmd_ss|
       cmd_ss.source_files = "YDNetworkManager/YDCommand/**/*"
