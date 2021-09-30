@@ -24,10 +24,11 @@
 		15850CAF270565F8002F79B5 /* YDCommandConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CAD270565F8002F79B5 /* YDCommandConfig.m */; };
 		15850CB227056A30002F79B5 /* YDCommand+YDError.h in Headers */ = {isa = PBXBuildFile; fileRef = 15850CB027056A30002F79B5 /* YDCommand+YDError.h */; };
 		15850CB327056A30002F79B5 /* YDCommand+YDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CB127056A30002F79B5 /* YDCommand+YDError.m */; };
-		15850CB627056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 15850CB427056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.h */; };
-		15850CB727056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CB527056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.m */; };
 		15850CC227056C31002F79B5 /* YDBatchCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 15850CC027056C31002F79B5 /* YDBatchCommand.h */; };
 		15850CC327056C31002F79B5 /* YDBatchCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CC127056C31002F79B5 /* YDBatchCommand.m */; };
+		15850CCF270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 15850CCD270598B4002F79B5 /* AFJSONResponseSerializer+YDAgent.h */; };
+		15850CD0270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CCE270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m */; };
+		15850CD1270598C3002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CCE270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m */; };
 		5B537CC77545A9782B11AB80 /* Pods_YDNetworkManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7819E4047CC8257A8302EC6D /* Pods_YDNetworkManagerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,10 +76,10 @@
 		15850CAD270565F8002F79B5 /* YDCommandConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCommandConfig.m; sourceTree = "<group>"; };
 		15850CB027056A30002F79B5 /* YDCommand+YDError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDCommand+YDError.h"; sourceTree = "<group>"; };
 		15850CB127056A30002F79B5 /* YDCommand+YDError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDCommand+YDError.m"; sourceTree = "<group>"; };
-		15850CB427056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFJSONResponseSerializer+YDAgent.h"; sourceTree = "<group>"; };
-		15850CB527056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFJSONResponseSerializer+YDAgent.m"; sourceTree = "<group>"; };
 		15850CC027056C31002F79B5 /* YDBatchCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBatchCommand.h; sourceTree = "<group>"; };
 		15850CC127056C31002F79B5 /* YDBatchCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBatchCommand.m; sourceTree = "<group>"; };
+		15850CCD270598B4002F79B5 /* AFJSONResponseSerializer+YDAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFJSONResponseSerializer+YDAgent.h"; sourceTree = "<group>"; };
+		15850CCE270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFJSONResponseSerializer+YDAgent.m"; sourceTree = "<group>"; };
 		5F0AE8D37914448E382B9C5F /* Pods-YDNetworkManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDNetworkManagerDemo.release.xcconfig"; path = "Target Support Files/Pods-YDNetworkManagerDemo/Pods-YDNetworkManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7819E4047CC8257A8302EC6D /* Pods_YDNetworkManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDNetworkManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59B5BA5BC3185C63BB936C6 /* Pods-YDNetworkManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDNetworkManagerDemo.debug.xcconfig"; path = "Target Support Files/Pods-YDNetworkManagerDemo/Pods-YDNetworkManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,8 +198,8 @@
 				15850CC127056C31002F79B5 /* YDBatchCommand.m */,
 				15850CB027056A30002F79B5 /* YDCommand+YDError.h */,
 				15850CB127056A30002F79B5 /* YDCommand+YDError.m */,
-				15850CB427056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.h */,
-				15850CB527056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.m */,
+				15850CCD270598B4002F79B5 /* AFJSONResponseSerializer+YDAgent.h */,
+				15850CCE270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m */,
 			);
 			path = YDCommand;
 			sourceTree = "<group>";
@@ -230,7 +231,7 @@
 				15850CAE270565F8002F79B5 /* YDCommandConfig.h in Headers */,
 				15850C6627055D80002F79B5 /* YDNetworkManager.h in Headers */,
 				15850CC227056C31002F79B5 /* YDBatchCommand.h in Headers */,
-				15850CB627056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.h in Headers */,
+				15850CCF270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.h in Headers */,
 				15850CAA270564B0002F79B5 /* YDCommand.h in Headers */,
 				15850CB227056A30002F79B5 /* YDCommand+YDError.h in Headers */,
 			);
@@ -442,8 +443,8 @@
 			files = (
 				15850CB327056A30002F79B5 /* YDCommand+YDError.m in Sources */,
 				15850CC327056C31002F79B5 /* YDBatchCommand.m in Sources */,
+				15850CD0270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */,
 				15850CAF270565F8002F79B5 /* YDCommandConfig.m in Sources */,
-				15850CB727056B9C002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */,
 				15850CAB270564B0002F79B5 /* YDCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +455,7 @@
 			files = (
 				15850C7A27055E3A002F79B5 /* ViewController.m in Sources */,
 				15850C7427055E3A002F79B5 /* AppDelegate.m in Sources */,
+				15850CD1270598C3002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */,
 				15850C8527055E3C002F79B5 /* main.m in Sources */,
 				15850C7727055E3A002F79B5 /* SceneDelegate.m in Sources */,
 			);

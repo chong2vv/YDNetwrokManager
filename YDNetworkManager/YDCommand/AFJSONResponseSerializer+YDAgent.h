@@ -5,7 +5,7 @@
 //  Created by wangyuandong on 2021/9/30.
 //
 
-#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/AFURLResponseSerialization.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
