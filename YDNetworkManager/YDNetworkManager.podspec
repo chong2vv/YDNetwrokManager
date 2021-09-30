@@ -19,8 +19,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "王远东" => "chong2vv@gmail.com" }
 
   spec.source       = { :git => "https://github.com/chong2vv/YDNetwrokManager.git", :tag => "#{spec.version}" }
-
-  spec.ios.deployment_target = '9.0'
   spec.source_files = "YDNetworkManager/**/*"
 
   spec.requires_arc = true
