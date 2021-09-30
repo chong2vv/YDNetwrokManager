@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - YDNetworkManager (0.0.1):
+    - YDNetworkManager/YDCommand (= 0.0.1)
+    - YTKNetwork (~> 2.0.4)
+  - YDNetworkManager/YDCommand (0.0.1):
+    - YTKNetwork (~> 2.0.4)
+  - YTKNetwork (2.0.4):
+    - AFNetworking (~> 3.0)
+
+DEPENDENCIES:
+  - YDNetworkManager (from `./YDNetworkManager/YDNetworkManager.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - YTKNetwork
+
+EXTERNAL SOURCES:
+  YDNetworkManager:
+    :path: "./YDNetworkManager/YDNetworkManager.podspec"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  YDNetworkManager: 605fb9898b3ae8a53bae68c45a9ea04fca2a55c8
+  YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
+
+PODFILE CHECKSUM: 366715d857a455c2e8891990e2cfececcd9f7eba
+
+COCOAPODS: 1.10.0
