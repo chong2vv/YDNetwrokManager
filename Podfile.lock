@@ -14,10 +14,10 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - YDNetworkManager (0.0.1):
-    - YDNetworkManager/YDCommand (= 0.0.1)
+  - YDNetworkManager (0.0.2):
+    - YDNetworkManager/YDCommand (= 0.0.2)
     - YTKNetwork (~> 2.0.4)
-  - YDNetworkManager/YDCommand (0.0.1):
+  - YDNetworkManager/YDCommand (0.0.2):
     - YTKNetwork (~> 2.0.4)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
@@ -36,7 +36,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  YDNetworkManager: 605fb9898b3ae8a53bae68c45a9ea04fca2a55c8
+  YDNetworkManager: 933ebc52227aabb57e29cc593bde59cf550690bc
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
 
 PODFILE CHECKSUM: 366715d857a455c2e8891990e2cfececcd9f7eba
