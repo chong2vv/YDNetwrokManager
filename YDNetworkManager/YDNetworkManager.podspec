@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.name         = "YDNetworkManager"
   spec.version      = "0.0.2"
   spec.summary      = "YD 的网络请求库，基于YTK、AF"
-
+  spec.platform     = :ios, "9.0"
   spec.homepage     = "https://github.com/chong2vv/YDNetwrokManager"
 
   spec.license          = { :type => 'MIT', :file => 'YDNetworkManager/LICENSE' }
