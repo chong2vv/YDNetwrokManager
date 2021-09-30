@@ -23,5 +23,5 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   spec.frameworks = "Foundation", "UIKit"
-  spec.dependency 'YTKNetwork', '~> 2.0.4'
+  spec.dependency 'YTKNetwork'
 end
