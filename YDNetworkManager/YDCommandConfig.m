@@ -7,8 +7,7 @@
 
 #import "YDCommandConfig.h"
 #import <YTKNetwork/YTKNetwork.h>
-#import <AFNetworking/AFNetworking.h>
-
+#import <AFNetworking/AFNetworkReachabilityManager.h>
 
 #define kPageSize 20
 #define kProtocolVersion @"1.0"

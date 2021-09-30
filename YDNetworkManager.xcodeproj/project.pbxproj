@@ -29,6 +29,7 @@
 		15850CCF270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 15850CCD270598B4002F79B5 /* AFJSONResponseSerializer+YDAgent.h */; };
 		15850CD0270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CCE270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m */; };
 		15850CD1270598C3002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CCE270598B5002F79B5 /* AFJSONResponseSerializer+YDAgent.m */; };
+		15850CD2270599C5002F79B5 /* YDCommandConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850CAD270565F8002F79B5 /* YDCommandConfig.m */; };
 		5B537CC77545A9782B11AB80 /* Pods_YDNetworkManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7819E4047CC8257A8302EC6D /* Pods_YDNetworkManagerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -453,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15850CD2270599C5002F79B5 /* YDCommandConfig.m in Sources */,
 				15850C7A27055E3A002F79B5 /* ViewController.m in Sources */,
 				15850C7427055E3A002F79B5 /* AppDelegate.m in Sources */,
 				15850CD1270598C3002F79B5 /* AFJSONResponseSerializer+YDAgent.m in Sources */,
