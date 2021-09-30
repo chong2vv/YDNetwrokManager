@@ -14,13 +14,14 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.homepage     = "https://github.com/chong2vv/YDNetwrokManager"
 
-  spec.license          = { :type => 'MIT', :file => 'YDNetworkManager/LICENSE' }
+  spec.license      = "MIT"
 
   spec.author             = { "王远东" => "chong2vv@gmail.com" }
 
   spec.source       = { :git => "https://github.com/chong2vv/YDNetwrokManager.git", :tag => "#{spec.version}" }
   spec.source_files = "YDNetworkManager/**/*"
 
+  spec.static_framework = true
   spec.requires_arc = true
   spec.frameworks = "Foundation", "UIKit"
   spec.dependency 'YTKNetwork'
