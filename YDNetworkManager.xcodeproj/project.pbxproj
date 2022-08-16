@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152254C228AC03CA00ED20FC /* YDNetworkManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 152254C128AC03CA00ED20FC /* YDNetworkManager.podspec */; };
 		15850C6627055D80002F79B5 /* YDNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 15850C6327055D80002F79B5 /* YDNetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15850C7427055E3A002F79B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850C7327055E3A002F79B5 /* AppDelegate.m */; };
 		15850C7727055E3A002F79B5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15850C7627055E3A002F79B5 /* SceneDelegate.m */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		0CE5C7A80741FBE319A17ACF /* Pods-Demo-YDNetworkManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-YDNetworkManagerDemo.release.xcconfig"; path = "Target Support Files/Pods-Demo-YDNetworkManagerDemo/Pods-Demo-YDNetworkManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		152254C128AC03CA00ED20FC /* YDNetworkManager.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = YDNetworkManager.podspec; sourceTree = SOURCE_ROOT; };
 		15850C6027055D80002F79B5 /* YDNetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YDNetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15850C6327055D80002F79B5 /* YDNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDNetworkManager.h; sourceTree = "<group>"; };
 		15850C7027055E3A002F79B5 /* YDNetworkManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDNetworkManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +71,6 @@
 		15850C9427055E3C002F79B5 /* YDNetworkManagerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDNetworkManagerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15850C9827055E3C002F79B5 /* YDNetworkManagerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNetworkManagerDemoUITests.m; sourceTree = "<group>"; };
 		15850C9A27055E3C002F79B5 /* YDNetworkManagerDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDNetworkManagerDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
-		15850CA627056050002F79B5 /* YDNetworkManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YDNetworkManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		15850CA8270564B0002F79B5 /* YDCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCommand.h; sourceTree = "<group>"; };
 		15850CA9270564B0002F79B5 /* YDCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDCommand.m; sourceTree = "<group>"; };
 		15850CAC270565F8002F79B5 /* YDCommandConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDCommandConfig.h; sourceTree = "<group>"; };
@@ -146,7 +147,7 @@
 		15850C6227055D80002F79B5 /* YDNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				15850CA627056050002F79B5 /* YDNetworkManager.podspec */,
+				152254C128AC03CA00ED20FC /* YDNetworkManager.podspec */,
 				15850C6327055D80002F79B5 /* YDNetworkManager.h */,
 				15850CAC270565F8002F79B5 /* YDCommandConfig.h */,
 				15850CAD270565F8002F79B5 /* YDCommandConfig.m */,
@@ -367,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152254C228AC03CA00ED20FC /* YDNetworkManager.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
