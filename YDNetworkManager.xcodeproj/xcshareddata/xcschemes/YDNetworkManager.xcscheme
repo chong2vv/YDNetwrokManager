@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8E72F6481E1515C8BC30606DB79371CF"
-               BuildableName = "YDNetworkManager"
+               BuildableName = "libYDNetworkManager.a"
                BlueprintName = "YDNetworkManager"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>

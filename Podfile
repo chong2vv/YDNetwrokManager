@@ -1,12 +1,12 @@
-use_frameworks!
-
 platform :ios, '9.0'
 
-target 'YDNetworkManagerDemo' do
+abstract_target 'Demo' do
 
   # pod for YDNetworkManager
-  pod 'YDNetworkManager', :path => './YDNetworkManager/YDNetworkManager.podspec'
+  pod 'YDNetworkManager', :path => './YDNetworkManager.podspec'
   
+  target 'YDNetworkManagerDemo' do
+
+  end
+
 end
-
-
